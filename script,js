@@ -1,0 +1,17 @@
+document.addEventListener('DOMContentLoaded', function(){
+  let tamanhoatualfont = 1;
+
+  const botaoaumentarfonte = document.getElementById('aumentar-font');
+  const botaodiminuirfonte = document.getElementById('diminuir-font');
+
+  botaoaumentarfonte.addEventListener('click', function(){
+    tamanhoatualfont += 0.1;
+    document.body.style.fontSize = `${tamanhoatualfont}rem`;
+  });
+
+  botaodiminuirfonte.addEventListener('click', function(){
+    tamanhoatualfont -= 0.1;
+    document.body.style.fontSize = `${tamanhoatualfont}rem`;
+  });
+
+});
